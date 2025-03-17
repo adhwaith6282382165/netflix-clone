@@ -1,3 +1,4 @@
+import { Route, Routes } from "react-router-dom"
 import Footer from "./components/Footer"
 import Header from "./components/Header"
 import Home from "./pages/Home"
@@ -11,11 +12,11 @@ function App() {
     <>
       <Header />
 
-      <Home />
-
-      <LandingPage />
-
-      <WatchHistory />
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/watch" element={<WatchHistory />} />
+      </Routes>
 
       <Footer />
     </>

@@ -4,3 +4,10 @@
   box-sizing: border-box;
   font-family: "Jost", sans-serif;
 }
+
+body {
+  background-color: black;
+}
+.textStyle{
+  color: white;
+}
